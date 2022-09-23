@@ -1,0 +1,76 @@
+body {
+ margin: auto;
+}
+
+li {
+    display: inline-block;
+    padding: 30px;
+    margin: 3px;   
+}
+
+.main-nav {
+        display:flex;
+        background-color: rgb(76, 233, 76);         
+}
+
+@media only screen and (max-width: 600px)
+{
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.push {
+    margin-left: auto;
+}
+
+
+.cover {
+    width:30rem;
+}
+
+.red {
+    background-color:white;
+}
+.blue {
+    background-color: rgb(86, 141, 224);
+}
+.orange {
+    background-color: orange;
+}
+
+.zone {
+    display: flex;
+    text-align: center;
+    font-size: 7em;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    transition: all 0.3s linear;
+}
+.zone.hover{
+    box-shadow:rgba(0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+ 
+.grid-wrapper {
+     display: grid;
+     gap: 20px;
+     grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+}
+.box > img {
+    width:100%;
+}
+.box {
+    background-color: #444;
+    padding: 130px;
+    margin: 20px;
+}
